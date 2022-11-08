@@ -1,1 +1,282 @@
-css
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  list-style-type: none;
+  font-family: "Lato", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #6b0202;
+  color: white;
+  height: 10vh;
+}
+
+header ul {
+  display: flex;
+}
+
+header ul li {
+  margin: 0 2em;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header ul li a:hover {
+  transition: 0.7s;
+  color: #fdb01f;
+}
+
+main {
+}
+
+main .apresentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4em;
+}
+
+main .apresentation .content {
+  width: 30vw;
+  margin-right: 10em;
+}
+
+main .apresentation .content h1 {
+  font-size: 3em;
+  color: #6b0202;
+}
+
+main .apresentation .content p {
+  margin: 2em 0;
+  line-height: 1.5em;
+}
+
+main .apresentation .content button {
+  margin-bottom: 9em;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+  background-color: #6b0202;
+  cursor: pointer;
+}
+
+main .apresentation .gaara-img {
+  background-color: #6b0202;
+  padding: 20px;
+  border-radius: 20px;
+  border: 5px solid transparent;
+  animation: colors 5s infinite;
+}
+
+main .apresentation .gaara-img img {
+  width: 400px;
+  height: 400px;
+}
+
+main .clients {
+}
+
+main .clients ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+main .clients ul {
+  margin-top: 6em;
+}
+
+main .clients ul:nth-child(1) {
+  font-size: 1.5em;
+  color: #cc4616;
+  font-weight: bold;
+}
+
+main .clients ul li {
+}
+
+main .clients ul li img {
+  width: 60px;
+  height: 60px;
+}
+
+main .services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7em;
+  text-align: center;
+}
+
+main .services hgroup h3 {
+  color: #cc4616;
+}
+
+main .services hgroup h2 {
+  color: #6b0202;
+  margin: 0.5em 0;
+  font-size: 2em;
+}
+
+main .services .content-services {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3em;
+}
+
+main .services .content-services .card figure img {
+  border-radius: 20px;
+  width: 350px;
+  height: 300px;
+}
+
+main .services .content-services .card figure figcaption {
+  color: #fd7f00;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 1em;
+}
+
+main .services .content-services .card p {
+  width: 70%;
+  margin: 0 auto;
+  font-size: 0.95em;
+  line-height: 1.5em;
+}
+
+main .more-infos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9em;
+  background-color: #6b0202;
+  padding: 20px;
+}
+
+main .more-infos img {
+  border-radius: 20px;
+  width: 400px;
+  height: 300px;
+}
+
+main .more-infos .content-infos {
+  margin-left: 5em;
+}
+
+main .more-infos .content-infos hgroup {
+  display: flex;
+  flex-direction: column;
+}
+
+main .more-infos .content-infos hgroup h3 {
+  margin: 1em 0;
+  color: #fdb01f;
+}
+
+main .more-infos .content-infos hgroup h2 {
+  color: white;
+}
+
+main .more-infos .content-infos p {
+  margin-top: 1em;
+  color: white;
+  width: 60%;
+  margin: 2em 0;
+  margin-right: auto;
+}
+
+main .more-infos .content-infos form {
+  margin-bottom: 5em;
+}
+
+main .more-infos .content-infos form input {
+  padding: 7px;
+  color: #fdb01f;
+  border-radius: 2px;
+  width: 20vw;
+}
+
+main .more-infos .content-infos form button {
+  background-color: #fdb01f;
+  color: white;
+  font-weight: bold;
+  border-radius: 2px;
+  padding: 7px;
+}
+
+main .more-infos .content-infos form input::placeholder {
+  color: #fdb01f;
+  font-weight: bold;
+}
+
+main .died {
+  margin-top: 7em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .died h2 {
+  font-size: 2em;
+  color: #6b0202;
+}
+
+main .died .content-img {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3em;
+}
+
+main .died .content-img img {
+  border-radius: 20px;
+  width: 350px;
+  height: 250px;
+  margin: 0 2em;
+}
+
+footer {
+  background-color: #6b0202;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  margin-top: 7em;
+}
+
+@keyframes colors {
+  0% {
+    border-color: #6b0202;
+  }
+
+  25% {
+    border-color: #c10000;
+  }
+
+  50% {
+    border-color: #fd7f00;
+  }
+
+  75% {
+    border-color: #cc4616;
+  }
+
+  100% {
+    border-color: #fdb01f;
+  }
+}
