@@ -137,6 +137,10 @@ main .services .content-services {
   margin-top: 3em;
 }
 
+main .services .content-services .card figure {
+  margin: 0 3em;
+}
+
 main .services .content-services .card figure img {
   border-radius: 20px;
   width: 350px;
